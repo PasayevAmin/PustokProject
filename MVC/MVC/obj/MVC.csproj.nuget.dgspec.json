@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\ca.r214.02\\Desktop\\git-task\\MVC\\MVC\\MVC.csproj": {}
+    "C:\\Users\\ca.r214.02\\Desktop\\PustokProject\\MVC\\MVC\\MVC.csproj": {}
   },
   "projects": {
-    "C:\\Users\\ca.r214.02\\Desktop\\git-task\\MVC\\MVC\\MVC.csproj": {
+    "C:\\Users\\ca.r214.02\\Desktop\\PustokProject\\MVC\\MVC\\MVC.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ca.r214.02\\Desktop\\git-task\\MVC\\MVC\\MVC.csproj",
+        "projectUniqueName": "C:\\Users\\ca.r214.02\\Desktop\\PustokProject\\MVC\\MVC\\MVC.csproj",
         "projectName": "MVC",
-        "projectPath": "C:\\Users\\ca.r214.02\\Desktop\\git-task\\MVC\\MVC\\MVC.csproj",
+        "projectPath": "C:\\Users\\ca.r214.02\\Desktop\\PustokProject\\MVC\\MVC\\MVC.csproj",
         "packagesPath": "C:\\Users\\ca.r214.02\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ca.r214.02\\Desktop\\git-task\\MVC\\MVC\\obj\\",
+        "outputPath": "C:\\Users\\ca.r214.02\\Desktop\\PustokProject\\MVC\\MVC\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\ca.r214.02\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -53,6 +53,10 @@
               "suppressParent": "All",
               "target": "Package",
               "version": "[7.0.14, )"
+            },
+            "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
+              "target": "Package",
+              "version": "[6.0.16, )"
             }
           },
           "imports": [

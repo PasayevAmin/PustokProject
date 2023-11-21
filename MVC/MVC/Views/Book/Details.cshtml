@@ -403,10 +403,9 @@
                                 <h3 class="product-title">Beats EP Wired On-Ear Headphone-Black</h3>
                                 <ul class="list-unstyled">
                                     <li>Ex Tax: <span class="list-value"> £60.24</span></li>
-                                    <li>Brands: <a href="#" class="list-value font-weight-bold"> Canon</a></li>
-                                    <li>Product Code: <span class="list-value"> model1</span></li>
-                                    <li>Reward Points: <span class="list-value"> 200</span></li>
-                                    <li>Availability: <span class="list-value"> In Stock</span></li>
+                                    <li>genre: <a href="#" class="list-value font-weight-bold"> @Model.Book.Genre</a></li>
+                                    <li>Page: <span class="list-value">@Model.Book.Name</span></li>
+                                    <li>Availability: <span class="list-value">@Model.Book.IsAvailable@(Model.Book.IsAvailable==true?"In Stock":"Out of Stock")</span></li>
                                 </ul>
                                 <div class="price-block">
                                     <span class="price-new">£73.79</span>

@@ -14,15 +14,15 @@ namespace MVC.Controllers
             _context = context;
         }
 
-        public IActionResult Index()
+        public async Task<IActionResult> Index()
         {
-            List<Slide>slides= _context.Slide.OrderBy(x=>x.Order).ToList();
-            List<Future> futures= _context.Future.ToList();
+            List<Slide>slides=await _context.Slide.OrderBy(x=>x.Order).ToListAsync();
+            List<Future> futures=await _context.Future.ToListAsync();
 
-            List<Book> books = _context.Books.Include(x=>x.Author)
+            List<Book> books =await _context.Books.Include(x=>x.Author)
                 .Include(x=>x.Genre)
                 .Include(x=>x.BookImages)
-                .ToList();
+                .ToListAsync();
 
 
             HomeVM homeVM = new HomeVM

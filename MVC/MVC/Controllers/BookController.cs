@@ -17,29 +17,25 @@ namespace MVC.Controllers
             _context = context;
         }
 
-        public IActionResult Details(int id)
+        public async Task<IActionResult> Details(int id)
         {
             if (id <= 0)
             {
                 return BadRequest();
             }
 
-            Book book = _context.Books
+            Book book =await _context.Books
                 .Include(x => x.Author)
                 .Include(x => x.Genre)
                 .Include(x => x.BookImages)
                 .Include(x=>x.BookTags)
                 .ThenInclude(x=>x.Tags)
-                .FirstOrDefault(x => x.Id == id);
+                .FirstOrDefaultAsync(x => x.Id == id);
             if (book is null)
             {
                 return NotFound();
             }
-            List<Book> relatedbooks = _context.Books.Where(x => x.GenreId == book.GenreId)
-                .Include(x=>x.Genre)
-                .Include(x=>x.Author)
-                .Include(x=>x.BookImages)
-                .ToList();
+            List<Book> relatedbooks = await _context.Books.Where(x => x.GenreId == book.GenreId).Include(x => x.Genre).Include(x => x.Author).Include(x => x.BookImages).ToListAsync();
                 
        
 
